@@ -1,0 +1,74 @@
+#app {
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  height: 100vh;
+  gap: 1.25rem;
+}
+
+
+aside {
+  .logo-wrapper {
+    position: absolute;
+    margin: 2rem;
+
+    h1 {
+      font: 400 2.5rem/1.6 'Leckerli One', sans-serif;
+      color: #FF598B;
+    }
+    
+    p {
+      font: 300 1rem/1.7 'Open Sans', sans-serif;
+      color: var(--text-heading);
+    }
+  }
+
+  .aside-container { 
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: .75rem;
+    } 
+  }
+}
+
+
+
+
+main {  
+  background-color: var(--shape-body);
+  padding: 5rem 8.125rem;
+  border-radius: .75rem;
+  overflow: auto;
+
+
+  h1 {
+    font: 600 1.75rem/1.6 'Baloo 2', sans-serif;
+    margin-bottom: 2.5rem;
+    color: var(--text-heading);
+  }
+}
+
+
+fieldset {
+  border: none;
+  display: grid;
+}
+
+
+.title-wrapper {
+  display: flex;
+  gap: .75rem;
+
+  .calendar-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: var(--input-placeholder);
+  }
+}
+
+
+legend {
+  font: 600 1.125rem/1.6 'Baloo 2', sans-serif;
+  margin-bottom: 1.5rem;
+  color: var(--text-heading);
+}
