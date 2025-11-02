@@ -1,0 +1,69 @@
+form {
+  max-width: 35rem;  
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
+
+
+input {
+  appearance: none;
+  width: 100%;
+  height: 3rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+
+  padding: .5rem 1rem;
+  margin-top: .75rem;
+  border-radius: .5rem;
+  font: var(--body-md);
+  color: var(--input-placeholder);
+  background-color: var(--input-base);
+
+  &::placeholder {
+  color: var(--input-placeholder);
+  } 
+
+  &:hover, &:focus {
+      border: 2px solid transparent;
+      outline: 1px solid var(--brand-light);
+      outline-offset: .1px;
+    }
+}
+
+
+input[type="datetime-local"] {
+  position: relative;
+  text-transform: uppercase;
+    
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+
+label {
+  font: var(--body-sm);
+}
+
+
+.title-wrapper {
+  display: flex;
+  gap: .75rem;
+
+  .calendar-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: var(--input-placeholder);
+  }
+}
+
+
+legend {
+  font: 600 1.125rem/1.6 'Baloo 2', sans-serif;
+  margin-bottom: 1.5rem;
+  color: var(--text-heading);
+}
