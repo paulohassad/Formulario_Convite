@@ -62,7 +62,7 @@ label {
   display: flex;
   gap: .75rem;
 
-  .calendar-img {
+  .calendar-img, paintbrush-img {
     width: 1.5rem;
     height: 1.5rem;
     stroke: var(--input-placeholder);
