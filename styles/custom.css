@@ -1,0 +1,73 @@
+.theme-color {
+  width: 100%;
+
+  .pick-color{
+    justify-content: space-between;
+
+    .color {
+      input[type="radio"] {
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        border: 6px solid var(--shape-button);
+        cursor: pointer;
+        transition: outline .2s;
+        background-color: #59B2FF; 
+
+        &:hover {
+          outline: 2px solid var(--brand-light);
+        }
+
+        &:checked {
+          outline: 2px solid var(--brand-light);
+        }
+      }
+
+      &:nth-child(2) input { 
+        background-color: #6A59FF; 
+      }
+
+      &:nth-child(3) input { 
+        background-color: #B259FF; 
+      }
+
+      &:nth-child(4) input { 
+        background-color: #FF59F9; 
+      }
+
+      &:nth-child(5) input { 
+        background-color: #FF598B; 
+      }
+
+      &:nth-child(6) input { 
+        background-color: #FF5959; 
+      }
+
+      &:nth-child(7) input { 
+        background-color: #FF5959; 
+      }
+
+      &:nth-child(8) input { 
+        background-color:#FF8B59; 
+      }
+
+      &:nth-child(9) input { 
+        background-color: #FFCD59;
+      }
+
+      &:nth-child(10) input {
+        background-color: #E1FF59; 
+      }
+
+      &:nth-child(11) input {
+        background-color: #59FF91; 
+      }
+
+      &:nth-child(12) input {
+        background-color: #59FFF9; 
+      }
+    }
+  }
+}
+
