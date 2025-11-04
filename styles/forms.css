@@ -1,12 +1,14 @@
 form {
-  max-width: 35rem;  
+  width: 100%;
 }
 
 fieldset {
+  
   border: none;
   display: grid;
   gap: 1rem;
   margin-top: 2.5rem;
+
 }
 
 input,
