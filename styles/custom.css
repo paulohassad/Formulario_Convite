@@ -2,6 +2,8 @@
   width: 100%;
 
   .pick-color{
+    display: grid;
+    grid-template-columns: repeat(12, auto);
     justify-content: space-between;
 
     .color {
@@ -16,7 +18,7 @@
         background-color: #59B2FF; 
 
         &:hover {
-          outline: 1.5px solid var(--brand-light);
+          outline: 2px solid var(--input-stroke);
         }
 
         &:checked {
@@ -72,6 +74,7 @@
 }
 
 .theme {
+  width: 100%;
   
   .theme-wrapper {
     display: grid;
@@ -90,36 +93,156 @@
       padding: .25rem;
       border-radius: .5rem;
       cursor: pointer;
+      transition: box-shadow .2s;
 
       img {
         width: 100%;
-        height: 5rem;
+        height: 6rem;
         object-fit: cover;
         border-radius: .5rem;
       }
       
+      &:hover {
+        background-color: var(--shape-hover);
+      }
+
       input {
         all: unset;
         position: absolute;
         inset: 0;
-    
-        &:hover {
-          outline: 2px solid var(--brand-light);
-          border-radius: .5rem;
-        }
-
+        
         &:checked {
           outline: 2px solid var(--brand-light);
           border-radius: .5rem;
         }
       }
 
+
       label {
         margin-top: .5rem;
       }
+
       
     }
 
-    
   } 
+}
+
+.dropzone {
+
+  .droparea {
+    
+    input[type="file"]{
+      display: none;
+    }
+    
+    .droparea-wrapper {
+      
+      margin-top: .75rem;
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      
+      
+      
+      .button-file {
+        display: flex;
+        width: 8rem;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+        
+        background-color: var(--shape-button);
+        gap: .5rem;
+        border-radius: .5rem;
+        font: var(--body-sm);
+        cursor: pointer;
+        transition: .2s;
+        
+        &:hover, &:active {
+          outline: 1px solid var(--brand-light);
+          background-color: var(--shape-hover);
+  
+          svg path {        
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: var(--brand-light);
+            
+          }
+        }
+      }
+
+
+      span {
+        font: var(--body-md);
+        color: var(--input-placeholder);
+      }
+    }
+  
+
+  
+  
+  }
+
+  .toggle-wrapper {
+    align-items: center;
+
+    .switch {
+      display: flex;
+      align-items: center;
+      margin-top: .75rem;
+      
+      input {
+        border-radius:1rem;
+        width: 4rem;
+        height: 2rem;
+        inset: 0;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+
+        &:checked {
+          outline: 0;
+        }
+      
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1.6rem;
+          height: 1.6rem;
+          top: 0.1rem;
+          left: 0.1rem;
+          border-radius: 50%;
+          background-color: var(--text-body);
+          transition: .2s;
+        }
+
+        &:checked {
+          background-color: var(--brand-dark);
+
+          &::before {
+            transform: translateX(2rem);
+          }
+          
+        }
+      }
+      
+      .toggle-button {
+        margin-left: 1rem;
+        font: var(--body-sm);
+        position: relative;
+        
+        &::before {
+          content: "Escuro";
+        }
+      }
+      
+      input:checked + .toggle-button::before {
+        content: "Claro";
+      }
+    }
+
+  }
+
+
 }
