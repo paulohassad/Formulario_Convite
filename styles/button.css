@@ -1,0 +1,28 @@
+
+.button-wrapper {
+  display: flex;
+  justify-content: end;
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-dark);
+    gap: .75rem;
+    width: 11rem;
+    height: 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+  
+    input[type="submit"] {
+      all: unset;
+      inset: 0;
+      font: 600 .75rem/1.5 var(--font-family);
+      color: var(--text-heading);
+    }
+
+    &:hover {
+      background-color: var(--brand-mid);
+    }
+  }
+}
