@@ -48,7 +48,7 @@ textarea {
 input[type="datetime-local"] {
   position: relative;
   text-transform: uppercase;
-    
+  
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
   }

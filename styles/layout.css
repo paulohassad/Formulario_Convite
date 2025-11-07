@@ -32,11 +32,9 @@ aside {
 }
 
 
-
-
 main {  
   background-color: var(--shape-body);
-  padding: 5rem 8.125rem;
+  padding: 5rem 12rem;
   border-radius: .75rem;
   overflow: auto;
 
