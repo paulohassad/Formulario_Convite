@@ -11,50 +11,6 @@ fieldset {
 
 }
 
-input,
-textarea {
-  appearance: none;
-  width: 100%;
-  border: 2px solid transparent;
-  outline: 1px solid var(--input-stroke);
-  padding: .5rem 1rem;
-  margin-top: .75rem;
-  border-radius: .5rem;
-  font: var(--body-md);
-  color: var(--input-placeholder);
-  background-color: var(--input-base);
-
-  &::placeholder {
-    color: var(--input-placeholder);
-  }
-
-  &:hover,
-  &:focus {
-    border: 2px solid transparent;
-    outline: 1px solid var(--brand-light);
-    outline-offset: .1px;
-  }
-}
-
-input {
-  height: 3rem;
-}
-
-textarea {
-  resize: vertical;
-}
-
-
-input[type="datetime-local"] {
-  position: relative;
-  text-transform: uppercase;
-  
-  &::-webkit-calendar-picker-indicator {
-    opacity: 0;
-  }
-}
-
-
 label {
   font: var(--body-sm);
 }

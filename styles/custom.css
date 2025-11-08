@@ -73,6 +73,8 @@
   }
 }
 
+
+
 .theme {
   width: 100%;
   
@@ -127,6 +129,8 @@
 
   } 
 }
+
+
 
 .dropzone {
 
@@ -222,9 +226,7 @@
 
           &::before {
             transform: translateX(2rem);
-          }
-
-          
+          }         
         }
       }
       

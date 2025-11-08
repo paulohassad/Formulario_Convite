@@ -22,11 +22,12 @@
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
   
-  --font-family: 'Opens Sans', sans-serif;
+  --font-family: 'Open Sans', sans-serif;
   --body-md: 500 1rem/1.6 var(--font-family);
   --body-sm: 400 .875rem/1.6 var(--font-family);
   --body-xs: 400 .75rem/1.6 var(--font-family);
 }
+
 
 
 body {
@@ -37,6 +38,8 @@ body {
   color: var(--text-body);
 }
 
+
+/* utilitários */
 .gap-1 {
   gap: 1rem;
 }
