@@ -52,7 +52,8 @@ Este projeto foi desenvolvido utilizando **HTML e CSS puros**, com foco em:
 ## 🖼️ Prévia do projeto
 
 <p align="center">
-  <img width="1865" height="710" alt="image" src="https://github.com/user-attachments/assets/f2a7b60b-10f2-4531-a204-103fc3e8e2d7" />
+  <img width="1841" height="890" alt="image" src="https://github.com/user-attachments/assets/d943400c-30d3-41c1-b79a-9c71aa166971" />
+
 </p>
 
 ---
