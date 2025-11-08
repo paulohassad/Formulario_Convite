@@ -15,6 +15,7 @@
     border: 2px solid transparent;
     outline: 1px solid var(--brand-light);
     outline-offset: .1px;
+    
   } 
 }
 
@@ -29,7 +30,12 @@
     border: none;
     background-color: var(--input-base);
     cursor: pointer;
-    
+
+     input{
+       &:hover, &:focus {
+         outline: 1px solid transparent;
+        }
+     }
     
     &:has(:checked){
       background-color: var(--shape-button);

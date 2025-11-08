@@ -3,7 +3,6 @@ form {
 }
 
 fieldset {
-  
   border: none;
   display: grid;
   gap: 1rem;
